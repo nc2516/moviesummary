@@ -14,7 +14,7 @@ const app = {
   
 
   getListOfMovies: function(name) {
-    fetch('https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=' + name + '&api-key=u8E0XY8RQWWbsgGGj6oTTDrGKzPYIB79')
+    fetch('https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=' + name + '&api-key=REGh7JKghsKjaicNaiY3Nlqql4BrQm2s')
       .then(response => response.json())
       .then(response => app.showMovieSummary(response))
       .catch(error => app.noMoviesFound());
